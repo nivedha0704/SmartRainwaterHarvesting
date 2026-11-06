@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Wrench, Plus, RefreshCw } from 'lucide-react';
 
-const API = 'http://localhost:5000/api/maintenance';
+const API = `${import.meta.env.VITE_API_URL}/api/maintenance`;
 
 function Maintenance() {
   const [items, setItems] = useState([]);

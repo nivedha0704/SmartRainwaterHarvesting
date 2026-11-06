@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Users, UserPlus, Trash2, RefreshCw } from 'lucide-react';
 
-const API = 'http://localhost:5000/api/users';
+const API = `${import.meta.env.VITE_API_URL}/api/users`;
 
 function UsersPage() {
   const [users, setUsers] = useState([]);

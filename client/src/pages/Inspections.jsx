@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ClipboardCheck, Plus, RefreshCw } from 'lucide-react';
 
-const API = 'http://localhost:5000/api/inspections';
+const API = `${import.meta.env.VITE_API_URL}/api/inspections`;
 
 function Inspections() {
   const [items, setItems] = useState([]);

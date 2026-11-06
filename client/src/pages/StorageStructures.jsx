@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Database, MapPin, Plus, Pencil, Trash2, X, Droplets } from 'lucide-react';
 
-const API = 'http://localhost:5000/api/storage-structures';
+const API = `${import.meta.env.VITE_API_URL}/api/storage-structures`;
 
 const emptyForm = {
   structureName: '',
